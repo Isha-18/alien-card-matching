@@ -1,5 +1,6 @@
 .html{
     min-height: 100vh;
+   
 }
 *{
     box-sizing:border-box;
@@ -43,6 +44,7 @@ body{
     height:175px;
     width:125px;
 }
+
 .card:hover .card-back{
     transform: rotateY(-180deg);
 }
@@ -56,10 +58,10 @@ body{
     height: 100%;
     display: flex;
     justify-content:center 
-    align-items: center;
-    overflow:hidden;
+    align-items : center;
+    overflow:hidden ;
     backface-visibility:hidden;
-    transition: transform 500ms ease-in-out;
+    transition : transform 500ms ease-in-out;
 }
 .alien{
     width: 125px;
@@ -83,4 +85,16 @@ transform: translateY(0);
 .card-front:hover .alien1{
     transform: scale(1);
 
+}
+.overlay-text{
+    position: fixed
+    top :0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    color:#0000
 }
